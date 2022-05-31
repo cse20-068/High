@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/modals/">
+
+          <!--Favicon-->
+  <link rel="shortcut icon" href="img/Airplane-Wallpapers-76-images-.jpg">
+  <!--End of favicon-->
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/modals.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar nav-pills navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"/>
+        </svg>
+        <img src="img/" alt="">
+        <span class="fs-4">WeFlyHigh</span>
+      </a>
+      <div class="container">
+        <img src="" alt="">
+        <a href="index.html" class="navbar-brand">WeFlyHigh</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expand="false" aria-lable="Togle navigation">
+          <span class="navbar-toggler-icon"></span>
+  
+        </button>
+        <div class="collapse navbar-collapse " id="navMenu">
+          <ul class="navbar-nav ms-auto text-center ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="log in.html">log in</a>
+            </li>
+            <li>
+              <a class="nav-link" href="Book aflight.html">Flights</a>
+            </li>
+            <li>
+              <a class="nav-link" href="ticket.html">Ticket</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div>
+        <h1 class="text-center" style="font-family: 'Times New Roman', Times, serif; color: blue;">Ticket</h1>
+      </div>
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <h2 class="fw-bold mb-0">Place a Ticket</h2>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+
+        <form action="OTP.html" class="" method="get">
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control rounded-4" id="floatingPassword" placeholder="name" value="" required>
+            <label for="floatingInput">Ticket Number</label>
+            <div class="invalid-feedback">
+              Valid Ticket Number is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="amount" class="form-control rounded-4" id="floatingPassword" placeholder="amount" value="" required>
+            <label for="floatingInput">Amount</label>
+            <div class="invalid-feedback">
+              Valid Amount is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control rounded-4" id="floatingPassword"placeholder="name" value="" required>
+            <label for="floatingInput">Name</label>
+            <div class="invalid-feedback">
+              Valid Name is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control rounded-4" id="floatingPassword" placeholder="name" value="" required>
+            <label for="floatingInput">Flight No</label>
+            <div class="invalid-feedback">
+              Valid Flight Number is required.
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="date" class="form-control rounded-4" id="floatingPassword" placeholder="date" value="" required>
+            <label for="floatingPassword">FlightDate</label>
+            <div class="invalid-feedback">
+              Valid Date is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="time" class="form-control rounded-4" id="floatingPassword" placeholder="time" value="" required>
+            <label for="floatingPassword">FlightTime</label>
+            <div class="invalid-feedback">
+              Valid Time of the Flight is required.
+            </div>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Submit</button>
+          <small class="text-muted">By clicking Submit, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bottom container-fluid-fill bg-dark mt-5">
+    <div class="container">
+      <div class="row justify-content-between gy-3">
+        <div class="col-md-6">
+          <p class="mb-5 text-light">Copyright © 2022-WeFlyHigh. All rights reserved.</p>
+        </div>
+        <div class="col-auto">
+          <p class="mb-0 text-light">Created by WeFlyHigh</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="b-example-divider"></div>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+  </body>
+</html>

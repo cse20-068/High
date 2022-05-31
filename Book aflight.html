@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--Favicon-->
+  <link rel="shortcut icon" href="img/Airplane-Wallpapers-76-images-.jpg">
+  <!--End of favicon-->
+    
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/modals/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/modals.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar nav-pills navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"/>
+        </svg>
+        <span class="fs-4">WeFlyHigh</span>
+      </a>
+      <div class="container">
+        <img src="" alt="">
+        <a href="index.html" class="navbar-brand">WeFlyHigh</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expand="false" aria-lable="Togle navigation">
+          <span class="navbar-toggler-icon"></span>
+  
+        </button>
+        <div class="collapse navbar-collapse " id="navMenu">
+          <ul class="navbar-nav ms-auto text-center ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="log in.html">log in</a>
+            </li>
+            <li>
+              <a class="nav-link" href="Book aflight.html">Flights</a>
+            </li>
+            <li>
+              <a class="nav-link" href="ticket.html">Ticket</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div>
+        <h1 class="text-center" style="font-family: 'Times New Roman', Times, serif; color: blue;">Book</h1>
+      </div>
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <h2 class="fw-bold mb-0">Book a Flight</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form method="post" action="payment.html" class="">
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control rounded-4" id="floatingInput" placeholder="name" value="" required>
+            <label for="floatingInput">Flight Name</label>
+            <div class="invalid-feedback">
+              Valid Flight Name is required.
+            </div>
+            
+          </div>
+          <div class="form-floating mb-3">
+            <input type="flightid" class="form-control rounded-4" id="floatingInput" placeholder="flightid" value="" required>
+            <label for="floatingInput">Flight ID</label>
+            <div class="invalid-feedback">
+              Valid Flight ID is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="class" class="form-control rounded-4" id="floatingInput" placeholder="class" value="" required>
+            <label for="floatingInput">Class</label>
+            <div class="invalid-feedback">
+              Valid Class is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="flightorigin" class="form-control rounded-4" id="floatingInput" placeholder="flightorigin" value="" required>
+            <label for="floatingInput">Origin Of Flight</label>
+            <div class="invalid-feedback">
+              Valid Origin of Flight is required.
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="destination" class="form-control rounded-4" id="floatingInput" placeholder="destination" value="" required>
+            <label for="floatingInput">Destination</label>
+            <div class="invalid-feedback">
+              Valid Destination is required.
+            </div>
+          </div>
+          
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Submit</button>
+          <small class="text-muted">By clicking Submit, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="mt-5">Display Of Results</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Flight Name </th>
+      <th scope="col">Flight ID </th>
+      <th scope="col">Origin of Flight</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Times</th>
+      <th scope="col">Date</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Portuguse Airlines</th>
+      <td>FID-1</td>
+      <td>Portugal</td>
+      <td>Mexico</td>
+      <td>1500CAT</td>
+      <td>27/03/2022</td>
+      <td>P1240.45</td>
+    </tr>
+    <tr>
+      <th scope="row">Dutch Airways</th>
+      <td>FID-2</td>
+      <td>Netherlands</td>
+      <td>Turkey</td>
+      <td>1000CAT</td>
+      <td>20/01/2022</td>
+      <td>P6253.56</td>
+    </tr>
+    <tr>
+      <th scope="row">Austrian Air</th>
+      <td >GIF-4</td>
+      <td>Austria</td>
+      <td>Belgium</td>
+      <td>0040CAT</td>
+      <td>12/07/2022</td>
+      <td>14 504.47</td>
+    </tr>
+    <tr>
+      <th scope="row">Air Belgium</th>
+      <td >GIF-4</td>
+      <td>Belgium</td>
+      <td>Spain</td>
+      <td>2340CAT</td>
+      <td>04/08/2022</td>
+      <td>6334.23</td>
+    </tr>
+    <tr>
+      <th scope="row">Croatian Pacific</th>
+      <td >GIF-4</td>
+      <td>Croatia</td>
+      <td>Netherlands</td>
+      <td>1400CAT</td>
+      <td>27/08/2022</td>
+      <td>14 231.35</td>
+    </tr>
+    <tr>
+      <th scope="row">Turkish Airlines</th>
+      <td >GSF-6</td>
+      <td>Turkey</td>
+      <td>Belgium</td>
+      <td>1700CAT</td>
+      <td>24/01/2022</td>
+      <td>P6980.60</td>
+    </tr>
+    <tr>
+      <th scope="row">Air Russia</th>
+      <td >GTR-41</td>
+      <td>Russia</td>
+      <td>South Africa</td>
+      <td>2200CAT</td>
+      <td>13/07/2022</td>
+      <td>P10 000.00</td>
+    </tr>
+  </tbody>
+</table>
+<footer>
+  <div class="footer-bottom container-fluid-fill bg-dark mt-3">
+    <div class="container">
+      <div class="row justify-content-between gy-3">
+        <div class="col-md-6">
+          <p class="mb-5 text-light">Copyright © 2022-WeFlyHigh. All rights reserved.</p>
+        </div>
+        <div class="col-auto">
+          <p class="mb-0 text-light">Created by WeFlyHigh</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="b-example-divider"></div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
